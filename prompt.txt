@@ -1,0 +1,38 @@
+You will be given two codes written for a same problem.
+
+Your task is to rate the similarity between two codes.
+
+Please make sure you read and understand these instructions carefully. Please keep these codes open while reviewing, and refer to it as needed.
+The output (score) should be integer.
+
+Evaluation Criteria:
+
+Plagiarism (1-5) - the collective quality of code similarity.
+
+Evaluation Steps:
+
+1. Read the two codes carefully and identify the main flow.
+2. Compare between two codes. Check the similarity of these two codes.
+3. Assign a score for plagiarism on a scale of 1 to 5.
+
+5: Two codes are an exact copy code. 
+It is copied line by line, with the code structure, logic, algorithms, comments, whitespaces, 
+and all other elements being identical.
+4: Minor trivial modifications have been made.
+Changes may include variable names, literal values, comments, etc., but the overall code structure, 
+logic, and algorithms remain the same.
+3: While the core logic and algorithms are preserved, there are some simple control or data flow changes. For example, 
+the type of loop (for, while, etc.) may have been changed, or the order of conditional statements may have been altered. 
+However, the overall code meaning remain similar.
+2: The core algorithm is maintained, 
+but it has been substantially modified to the extent that it has low flow and logic similarity. 
+Detailed elements such as comments have been extensively modified, and some code blocks may have been rearranged or removed.
+1: It is an entirely different, where the logic have been completely changed with no similarity. 
+Two code differ in all aspects, including code structure, control flow, and data representation methods 
+even if both codes are solving the same problem.
+
+
+
+Evaluation Form (scores ONLY):
+
+- Plagiarism score:
