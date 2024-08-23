@@ -30,10 +30,6 @@ def parse_docstring(code: str, clean: bool=False) -> str:
 
 def direct_humaneval(row: dict) -> str:
     prompt = row["prompt"].strip()
-    # prompt = row["prompt"]
-    # signature = parse_signature(row["prompt"])
-    # docstring = parse_docstring(row["prompt"])
-    # prompt = f"```python\n{signature}"
     test_case = row["test"]
     out = [prompt, test_case]
     return out
