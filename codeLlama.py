@@ -16,9 +16,9 @@ import argparse
 
 openai.api_key = "api-key"
 from data import making_prompt
-from generaton import create_generate_hf
+from generation import create_generate_hf
 
-parser = argparse.ArgumentParser(desciption = "Input")
+parser = argparse.ArgumentParser(description = "Input")
 
 parser.add_argument("model")
 parser.add_argument("dataset")

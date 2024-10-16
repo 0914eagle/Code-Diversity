@@ -36,7 +36,6 @@ def create_tokenizer(checkpoint_name: str):
     params = {
         "pretrained_model_name_or_path": checkpoint_name,
         "trust_remote_code": True,
-        "cache_dir" : "/share0/0914eagle/",
         "device_map": "auto",
     }
     
@@ -50,7 +49,6 @@ def create_model(cache_dir: str, checkpoint_name:str):
         "torch_dtype": torch.bfloat16,
         "trust_remote_code": True,
         "low_cpu_mem_usage": True,
-        "cache_dir": "/share0/0914eagle/",
         "max_length": 1024,
         "device_map": "auto",
     }
@@ -70,7 +68,7 @@ def create_generate_hf(checkpoint_name: str) -> Callable:
             raise ValueError("Tokenizer must have a pad token or an eos token")
         tokenizer.pad_token = tokenizer.bos_token
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = create_model("/share0/0914eagle/", checkpoint_name).eval()
+    model = create_model(checkpoint_name).eval()
     
     def generate_fn(
         prompt: list[str],

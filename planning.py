@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 
 import argparse
 from data import making_prompt
-from generaton import create_generate_hf
+from generation import create_generate_hf
 
 parser = argparse.ArgumentParser(desciption = "Input")
 

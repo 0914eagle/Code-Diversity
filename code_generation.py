@@ -16,9 +16,9 @@ import argparse
 
 
 from data import making_prompt
-from generaton import create_generate_hf
+from generation import create_generate_hf
 
-parser = argparse.ArgumentParser(desciption = "Input")
+parser = argparse.ArgumentParser(description = "Input")
 
 parser.add_argument("model")
 parser.add_argument("dataset")
@@ -278,7 +278,7 @@ for prompt in tqdm(prompts, desc="Implementation"):
         if not flag:
             code1 = delete_docstring(example_implementations[index][0])
             code2 = delete_docstring(example_implementations[index + 1][0])
-            GPTprompt = open("/home/0914eagle/CodeDiversity/prompt.txt").read()
+            GPTprompt = open("prompt.txt").read()
             GptCodePrompt = GPTprompt + "\nThe first code is, " +code1+ "\n And the second code is "+code2
             result = Gpt2(GptCodePrompt)
             g_results.append(result)
