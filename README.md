@@ -1,9 +1,5 @@
 # Is Functional Correctness Enough to Evaluate Code Language Models?Exploring Diversity of Generated Codes
 
-### Appendix
-
-In AAAI25_CodeLM_Diversity_Appendix, you can find the appendix of the paper "Is Functional Correctness Enough to Evaluate Code Language Models? Exploring Diversity of Generated Codes".
-
 ## Code
 
 This Folder contains the codes used in the experiments of the paper "Is Functional Correctness Enough to Evaluate Code Language Models? Exploring Diversity of Generated Codes".
